@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title>Register</title>
+	<style>
+	.table{
+		margin-top: auto;
+		margin-bottom: auto;
+
+
+	}
+	</style>
+</head>
+
+<body class="body">
+	<a href="index.php">Home</a>
+	<br/><br/>
+
+	<form class="form" action="register.php" method="post" enctype="multipart/form-data" >
+			<div class="index">
+
+		<table class ="table" align="center"  width="30%">
+					<tr> 
+				<td>Name</td>
+				<td><input type="name" name="username" placeholder="Enter Name"></td>
+			</tr>
+	  		<tr> 
+				<td>Email</td>
+				<td><input type="email" name="email" placeholder="Entre EmailID"></td>
+			</tr>
+				<tr> 
+				<td>Phone</td>
+				<td><input type="phone" name="phone" placeholder="Entre Phone Number"></td>
+			</tr>
+				<tr> 
+				<td>password</td>
+				<td><input type="password" name="password" placeholder="Entre password"><i class="fas fa-eye" onclick="show()"></i></td>
+
+			</tr>
+			<tr> 
+				  <td> Image:</td>
+				<td><input type="file" name="file" id="file"></td>
+				</tr>
+				<tr>
+				<tr>				
+				<td><input  type="submit" name="Submit" value="Register"></td>
+		
+			</td>
+			</tr>
+		</table>
+	</form>
+</div>
+ <script>
+ 	function show(){
+ 	 var password = document.getElementById("password");
+ 	 var icon = document.querySelector(".fas")
+ 	 if(password.type === "password"){
+        password.type = "text";
+      }
+      else {
+        password.type = "password";
+      }
+    };
+  </script>
+</body>
+</html>
+
